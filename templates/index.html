@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Urine stripe</title>
+	<link rel="stylesheet" type="text/css" href="/static/index.css">
+	<link rel="shortcut icon" href="/static/favicon.png">
+</head>
+<body>
+
+<p id="tt">Upload urine stripe image</p>
+
+<center>
+	<p id="m">1 file selected</p>
+	<form method="POST" action="/" enctype='multipart/form-data'>
+		<div id="dv">
+			<p class="dnd">Drag and drop</p>
+			<p class="dnd">or</p>
+			<label class="btn-dnd">
+				Browse files
+				<input type="file" name="file">
+			</label>
+		</div>
+	</form>
+	<button class="btn-dnd">Submit</button>
+</center>
+
+<script type="text/javascript" src="/static/index.js"></script>
+</body>
+</html>

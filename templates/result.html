@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Urine stripe</title>
+	<link rel="stylesheet" type="text/css" href="/static/result.css">
+	<link rel="shortcut icon" href="/static/favicon.png">
+</head>
+<body>
+
+<center>
+	<p><a href="/">Back to home</a></p>
+	<br>
+	<table>
+		{% for y in values %}
+			<tr>
+				<td>{{ y[0] }}</td>
+				<td>RGB {{ y[1] }}</td>
+			</tr>
+		{% endfor %}
+	</table>
+</center>
+</body>
+</html>
